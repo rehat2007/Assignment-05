@@ -15,10 +15,10 @@ const getTechnologies = async () => {
 
 function Main() {
     return (
-        <div>
-            <h2>Explore the <span>Technologies</span></h2>
+        <div className="px-20">
+            <h2 className="text-3xl font-bold mb-1">Explore the <span className="text-pink-500">Technologies</span></h2>
             <p>Pick one technology per category to build your ideal stack.</p>
-            <div className="flex gap-5 justify-center">
+            <div className="flex justify-between mt-8">
                 <TechnologyGrid technology={getTechnologies()} />
                 <StackSidebar />
             </div>

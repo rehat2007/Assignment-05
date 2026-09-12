@@ -1,7 +1,7 @@
 
 function Footer() {
     return (
-        <div className="flex justify-around p-10 mb-0 ">
+        <div className="flex justify-between py-7 m-20 mb-10 border-b border-b-gray-300">
             <div className="flex flex-col gap-3">
                 <div>
                     <img src="/src/assets/logo-text.png" alt="" className="w-34 " />
