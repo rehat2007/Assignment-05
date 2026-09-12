@@ -1,14 +1,20 @@
-import Footer from "./components/Footer/Footer"
-import Hero from "./components/Hero/Hero"
-import Navbar from "./components/Navbar/Navbar"
+import Footer from "../components/Footer/Footer.jsx"
+import Hero from "../components/Hero/Hero.jsx"
+import Main from "../components/main/Main.jsx"
+import Navbar from "../components/Navbar/Navbar.jsx"
+
+import { Suspense } from "react"
 
 function Home() {
     return (
-        <div>
-            <Navbar />
-            <Hero />
-            <Footer />
-        </div>
+        <>
+            <Suspense fallback={<p>Loding.....</p>} >
+                <Navbar />
+                <Hero />
+                <Main/>
+                <Footer />
+            </Suspense>
+        </>
     )
 }
 
