@@ -29,28 +29,34 @@ The project focuses on practicing React concepts such as components, props, stat
 
 # ⚛️ React Questions & Answers
 
-### 1. What is JSX, and why is it used in React?
+1. What is JSX, and why is it used in React?
 
-JSX is a syntax that lets us write HTML-like code inside JavaScript. React uses JSX to make creating and organizing UI components easier and more readable.
+JSX is a syntax that lets us write HTML-like code inside JavaScript. React uses JSX because it makes the UI easier to write and understand.
 
----
+2. What is the difference between props and state?
 
-### 2. What is the difference between props and state?
+Props are used to send data from a parent component to a child component. State is data that belongs to a component and can change when the user interacts with the website.
 
-**Props** are data passed from a parent component to a child component.
+3. What does the useState hook do, and where did you use it in this project?
 
-**State** is data managed inside a component that can change over time.
+useState is used to create and manage state in a React component. I used it to store the technologies data and update the selected technology stack.
 
-For example, technology data can be passed using props, while selected technologies can be stored in state.
+4. What does the useEffect hook do, and why did you need it to load the JSON data?
 
----
+useEffect lets us run some code after the component renders. I used it to load the JSON data when the component started, so the technology data could be shown on the page.
 
-### 3. What does the `useState` hook do, and where did you use it in this project?
+5. Why does every item in a .map() list need a unique key prop?
 
-`useState` allows a React component to store and update data.
+React needs a unique key to identify each item in a list. It helps React understand which item was changed, added, or removed and update the UI correctly.
 
-I used `useState` in the `Main` component to store the technology list and the selected technologies.
+6. What is conditional rendering? Show one place you used it (example: the empty stack message).
 
-```js
-const [technologies, setTechnologies] = useState([]);
-const [selectedCards, setSelectedCards] = useState([]);
+Conditional rendering means showing different UI based on a condition. In this project, I used it to show an empty stack message when there are no technologies in the selected stack.
+
+Example:
+
+{stack.length === 0 && <p>Your stack is empty</p>}
+
+7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+A parent sends data to a child using props. If the child needs to send something back, the parent can pass a function as a prop to the child. Then the child can call that function and send data back to the parent.
