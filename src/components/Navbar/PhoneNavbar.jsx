@@ -1,3 +1,4 @@
+import logo from "../../assets/logo-text.png"
 import { useState } from "react";
 
 function PhoneNavbar() {
@@ -13,7 +14,7 @@ function PhoneNavbar() {
                 </button>
 
                 <div>
-                    <img src="/src/assets/logo-text.png" alt="DevStack" className="" />
+                    <img src={logo} alt="DevStack" className="" />
                 </div>
 
                 <div className="flex items-center gap-1">

@@ -5,7 +5,7 @@ import TechnologyGrid from "../Technology/TechnologyGrid";
 
 const getTechnologies = async () => {
   try {
-    const response = await fetch("/public/data/technologies.json");
+    const response = await fetch("/data/technologies.json");
     const data = await response.json();
     return data;
   } catch (error) {

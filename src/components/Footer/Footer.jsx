@@ -1,3 +1,5 @@
+import fotterLogo from "../../assets/logo-text.png"
+
 function Footer() {
   return (
     <footer className="w-full border-b border-gray-300 px-6 py-10 sm:px-10 lg:px-20 lg:py-12">
@@ -9,7 +11,7 @@ function Footer() {
         <div className="flex w-full flex-col items-center gap-3 lg:w-2/5 lg:items-start">
           <div>
             <img
-              src="/src/assets/logo-text.png"
+              src={fotterLogo}
               alt="Dev Stack"
               className="w-34"
             />

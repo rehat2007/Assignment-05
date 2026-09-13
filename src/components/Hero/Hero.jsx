@@ -1,3 +1,5 @@
+import banner from "../../assets/banner-stack.png"
+
 function Hero() {
   return (
     <div className="w-full px-4 py-12 sm:px-6 sm:py-16 md:px-10 lg:px-16 ">
@@ -31,7 +33,7 @@ function Hero() {
         </div>
 
         <div className="flex w-full items-center justify-center lg:w-1/2"> 
-        <img src="/src/assets/banner-stack.png" alt="Development stack" className="w-64 max-w-full sm:w-80 md:w-96 lg:w-112.5"/>
+        <img src={banner} alt="Development stack" className="w-64 max-w-full sm:w-80 md:w-96 lg:w-112.5"/>
          </div>
 
       </div>

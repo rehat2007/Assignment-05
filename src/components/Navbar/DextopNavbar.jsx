@@ -1,7 +1,9 @@
+import logo from "../../assets/logo-text.png"
+
 function DextopNavbar() {
     return (
         <div className="flex justify-between w-full items-center border-b border-gray-300 bg-white px-6 py-4 lg:px-20">
-            <img src="/src/assets/logo-text.png" alt="DevStack" className="w-36" />
+            <img src={logo} alt="DevStack" className="w-36" />
             <div className=" flex items-center gap-7 font-semibold">
                 <a href="#" className="text-pink-600 transition hover:text-pink-700" > Home </a>
                 <a href="#" className="transition hover:text-pink-600">Technologies </a>
