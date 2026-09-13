@@ -1,30 +1,42 @@
-
 function Hero() {
-    return (
-        <div className="flex justify-between items-center px-20 w-full">
-            <div className="flex flex-col gap-6 ">
-                <h1 className="text-5xl font-bold">
-                    Build Your Ideal
-                    <span className="block bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-                        Development Stack
-                    </span>
+  return (
+    <div className="w-full px-4 py-12 sm:px-6 sm:py-16 md:px-10 lg:px-16 ">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 lg:flex-row lg:justify-between">
 
-                </h1>
-                <p>
-                    Explore frontend, backend, database, and tooling options,<br />
-                    compare them side by side, and put together the stack that fits your <br />
-                    next project.
-                </p>
-                <div className="flex gap-5 mt-5">
-                    <button className="cursor-pointer py-2 px-5 rounded-md text-white bg-linear-to-r from-orange-500 to-pink-500">Explore Technologies</button>
-                    <button className="cursor-pointer border border-gray-300 py-2 px-5 rounded-md ">Learn More</button>
-                </div>
-            </div>
-            <div className="flex justify-center items-center w-fit">
-                <img src="/src/assets/banner-stack.png" alt="" />
-            </div>
+        <div className="flex w-full flex-col gap-5 text-center lg:w-1/2 lg:items-start lg:text-left">
+
+          <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            Build Your Ideal
+            <span className="block bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+              Development Stack
+            </span>
+          </h1>
+
+          <p className="mx-auto max-w-xl text-base leading-7 text-gray-700 sm:text-lg lg:mx-0">
+            Explore frontend, backend, database, and tooling options,
+            compare them side by side, and put together the stack that fits
+            your next project.
+          </p>
+
+
+          <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+            <button className="cursor-pointer rounded-md bg-linear-to-r from-orange-500 to-pink-500 px-5 py-3 transitionduration-200 hover:scale-105 hover:shadow-lg active:scale-95 ">
+            Explore Technologies
+            </button>
+
+            <button className="cursor-pointer rounded-md border border-gray-300 px-5 py-3  transition duration-200 hover:border-pink-500 hover:text-pink-600 active:scale-95">
+            Learn More
+            </button>
+          </div>
         </div>
-    )
+
+        <div className="flex w-full items-center justify-center lg:w-1/2"> 
+        <img src="/src/assets/banner-stack.png" alt="Development stack" className="w-64 max-w-full sm:w-80 md:w-96 lg:w-112.5"/>
+         </div>
+
+      </div>
+    </div>
+  );
 }
 
-export default Hero
+export default Hero;

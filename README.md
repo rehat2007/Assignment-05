@@ -1,16 +1,56 @@
-# React + Vite
+# 🚀 DevStack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevStack Builder is a responsive web application that helps developers explore different technologies and build their ideal development stack. Users can browse technologies by category and select the tools they want to include in their stack.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 📚 **Explore Technologies** — Browse different frontend, backend, database, and development tools.
+- 🧩 **Build Your Stack** — Select technologies and create your own personalized development stack.
+- 📱 **Fully Responsive** — Works smoothly on mobile, tablet, and desktop devices.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript
+- Tailwind CSS
+- Vite
+- HTML5
+- CSS3
+- JSON
+- React Hooks (`useState`, `useEffect`)
 
-## Expanding the ESLint configuration
+## 📸 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+DevStack Builder provides a simple and modern interface where users can explore available technologies and select the ones they want to use in their development stack.
+
+The project focuses on practicing React concepts such as components, props, state management, hooks, conditional rendering, list rendering, and responsive UI development.
+
+---
+
+# ⚛️ React Questions & Answers
+
+### 1. What is JSX, and why is it used in React?
+
+JSX is a syntax that lets us write HTML-like code inside JavaScript. React uses JSX to make creating and organizing UI components easier and more readable.
+
+---
+
+### 2. What is the difference between props and state?
+
+**Props** are data passed from a parent component to a child component.
+
+**State** is data managed inside a component that can change over time.
+
+For example, technology data can be passed using props, while selected technologies can be stored in state.
+
+---
+
+### 3. What does the `useState` hook do, and where did you use it in this project?
+
+`useState` allows a React component to store and update data.
+
+I used `useState` in the `Main` component to store the technology list and the selected technologies.
+
+```js
+const [technologies, setTechnologies] = useState([]);
+const [selectedCards, setSelectedCards] = useState([]);
