@@ -1,18 +1,19 @@
 import TechnologyCard from "./TechnologyCard"
 
-function TechnologyGrid() {
+function TechnologyGrid({ technology , setSelectedCards}) {
+  
   return (
     <div className="grid grid-cols-3 gap-10">
-      <TechnologyCard/>
-      <TechnologyCard/>
-      <TechnologyCard/>
-      <TechnologyCard/>
-      <TechnologyCard/>
-      <TechnologyCard/>
-      <TechnologyCard/>
-      <TechnologyCard/>
+      {technology.map((tech) => {
+        return <TechnologyCard 
+        key={tech.id} 
+        tech={tech}
+        setSelectedCards={setSelectedCards}
+         />
+      })}
     </div>
   )
 }
 
-export default TechnologyGrid
+export default TechnologyGrid;
+
