@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import StackSidebar from "../Stack/StackSidebar";
 import TechnologyGrid from "../Technology/TechnologyGrid";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const getTechnologies = async () => {
   try {
     const response = await fetch("/data/technologies.json");
@@ -12,6 +15,10 @@ const getTechnologies = async () => {
     console.error("Error:", error);
   }
 };
+
+  const showNotification = () => {
+    toast.success("Technology added successfully!");
+  };
 
 function Main() {
   const [technologies, setTechnologies] = useState([]);
@@ -48,6 +55,7 @@ function Main() {
           technology={technologies}
           selectedCards={selectedCards}
           setSelectedCards={setSelectedCards}
+          tostNotification = {showNotification}
         />
 
         <StackSidebar
@@ -55,6 +63,8 @@ function Main() {
           setSelectedCards={setSelectedCards}
           clearStack={clearStack}
         />
+
+        <ToastContainer />
 
       </div>
 

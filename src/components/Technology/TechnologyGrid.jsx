@@ -1,6 +1,6 @@
 import TechnologyCard from "./TechnologyCard"
 
-function TechnologyGrid({ technology, setSelectedCards }) {
+function TechnologyGrid({ technology, setSelectedCards , tostNotification }) {
 
   return (
 
@@ -11,6 +11,7 @@ function TechnologyGrid({ technology, setSelectedCards }) {
           key={tech.id}
           tech={tech}
           setSelectedCards={setSelectedCards}
+          tost = {tostNotification}
         />
       })}
 

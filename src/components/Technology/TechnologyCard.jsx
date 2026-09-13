@@ -1,5 +1,5 @@
 
-function TechnologyCard({ tech, setSelectedCards }) {
+function TechnologyCard({ tech, setSelectedCards , tost }) {
 
     const handleClick = () => {
 
@@ -9,7 +9,8 @@ function TechnologyCard({ tech, setSelectedCards }) {
         }
 
         setSelectedCards(selectedCard)
-    }
+        tost()
+    }  
 
     return (
         <div className="border border-gray-300 rounded-2xl p-5 min-w-65 max-w-77 
@@ -55,7 +56,7 @@ function TechnologyCard({ tech, setSelectedCards }) {
             </div>
 
             <button
-                onClick={handleClick}
+                onClick={ handleClick  }
                 className="bg-black text-white w-full py-2 my-3 
                            border rounded-xl cursor-pointer
                            transition-all duration-200
